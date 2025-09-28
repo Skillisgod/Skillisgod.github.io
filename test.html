@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Balle qui rebondit</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background: #222;
+    }
+
+    .ball {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #ff6b6b;
+      position: relative;
+      animation: bounce 3s ease-out forwards;
+    }
+
+    @keyframes bounce {
+      0%   { transform: translateY(0); }
+      60%  { transform: translateY(50vh); }
+      75%  { transform: translateY(35vh); }
+      85%  { transform: translateY(50vh); }
+      92%  { transform: translateY(42vh); }
+      100% { transform: translateY(50vh); }
+    }
+  </style>
+</head>
+<body>
+  <div class="ball"></div>
+</body>
+</html>
